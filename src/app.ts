@@ -22,7 +22,6 @@ const app: FastifyPluginAsync = async (fastify, _) => {
     dir: join(__dirname, 'plugins'),
     ...opts,
   });
-
   void fastify.register(AutoLoad, {
     dir: join(__dirname, 'routes'),
     routeParams: true,
